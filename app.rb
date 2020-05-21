@@ -14,6 +14,8 @@ class App < Sinatra::Base
     @sf = params["sf"]
     @pf = params["pf"]
     @center = params["center"]
+
+    erb :newteam
   end
 
   post '/team' do
